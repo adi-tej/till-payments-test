@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {Route, Switch} from 'react-router-dom';
+import {Route, Switch, Redirect} from 'react-router-dom';
 import AppHeader from './components/AppHeader';
 import Customers from "./pages/Customers";
 import Merchants from "./pages/Merchants";
@@ -11,6 +11,9 @@ function App() {
             <AppHeader>
                 <Route exact path='/merchants' component={Merchants}/>
                 <Route exact path='/customers' component={Customers}/>
+                <Route exact path="/">
+                    <Redirect to="/merchants" />
+                </Route>
             </AppHeader>
         </Switch>
     );

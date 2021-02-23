@@ -1,6 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { MerchantsController } from './merchants.controller';
-import { CUSTOMERS } from '../customers/customers.mock';
 import { MERCHANTS } from './merchants.mock';
 
 describe('MerchantsController', () => {

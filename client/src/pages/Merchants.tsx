@@ -41,6 +41,7 @@ const Merchants = () => {
 
     return (
         <Container>
+            {/*Modal for merchant*/}
             <Modal
                 onClose={() => setOpen(false)}
                 onOpen={() => setOpen(true)}
@@ -64,6 +65,9 @@ const Merchants = () => {
                     <Button onClick={() => setOpen(false)}>Close</Button>
                 </Modal.Actions>
             </Modal>
+
+            {/*Show Merchants*/}
+
             <Card.Group>
                 {merchants.map((merchant: any, index: number) => (
                     <Card
